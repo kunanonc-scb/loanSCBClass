@@ -50,7 +50,7 @@ public class LoanController {
             log.error("Exception by Id {}", id);
             LoanError loanError = e.getLoanError();
             StatusModel status = new StatusModel(
-                    Response.FAIL_CODE.getContent(),
+                    loanError.getCode(),
                     loanError.getMessage()
             );
             responseModel.setStatus(status);

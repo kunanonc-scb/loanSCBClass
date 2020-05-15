@@ -1,19 +1,12 @@
 package com.ku.loan.service;
 
 import com.ku.loan.constants.LoanError;
-import com.ku.loan.constants.Response;
 import com.ku.loan.exception.LoanException;
 import com.ku.loan.model.LoanInfo;
-import com.ku.loan.model.ResponseModel;
-import com.ku.loan.model.StatusModel;
-import org.apache.commons.collections.map.HashedMap;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
-
-import java.util.HashMap;
-import java.util.Map;
 
 @Service
 public class LoanService {
